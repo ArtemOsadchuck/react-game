@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
         jj: 'React TS'
     };
 
-    
+
 
     return (
         <header >
@@ -27,7 +27,6 @@ export const Header: React.FC = () => {
                     <a href="https://rs.school/js/" className="logo">
                         <img className="footer_image" src='./assets/rss.svg' alt="Rolling Scope School" />
                     </a>
-
                     <ul id="nav-mobile" className="right hide-on-med">
                         <li><NavLink to="/" activeClassName="home_active">Home game</NavLink></li>
                         <li><NavLink to="/score/" className="nav_a">Score</NavLink></li>
