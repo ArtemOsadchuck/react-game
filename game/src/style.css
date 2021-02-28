@@ -1,9 +1,12 @@
-
+*{
+    overflow: hidden;
+}
 #root {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
+
 .nav-wrapper {
     padding-left: 1rem;
 }
@@ -12,13 +15,13 @@ main {
     flex: 1 0 auto;
     background-image: url(../assets/rss.svg);
     background-image: linear-gradient(to right top, #645042, #62786173, #718c7f, #879e9a80, #a3b0b17a);
-
 }
 
 .container-left {
     padding-left: 1.5rem;
     padding-bottom: 0.5rem;
 }
+
 .footer_image {
     width: 50px;
 }
@@ -26,9 +29,52 @@ main {
 .home_active {
     text-decoration: underline;
 }
+
 .nav_a {
     opacity: 0.7;
 }
+
 a.active {
     opacity: 1;
+}
+
+.weapon_img {
+    width: 200px;
+}
+
+.weapons_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 650px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn {
+    background-color: #62786173;
+}
+
+.btn_go {
+    width: 82%;
+}
+
+.home_btn_wrapper {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em; */
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 8rem;
+    max-width: 650px;
+    justify-content: space-around;
+
 }
