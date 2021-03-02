@@ -14,16 +14,16 @@ export interface Iweapon {
 
 export const Weapon: React.FC<Iweapon> = ({ jj }) => {
 
-    console.log(jj, 'Weapon')
-    const imgSrcFromProps: string = jj === 'paper' ? 'paper' :
-                                    jj === 'rock' ? 'rock' :
-                                        'scissors';
+    // console.log(jj, 'Weapon')
+    // const imgSrcFromProps: string = jj === 'paper' ? 'paper' :
+    //                                 jj === 'rock' ? 'rock' :
+    //                                     'scissors';
 
 
     
     const imgSrc: string = `../../assets/${jj}.png`
 
-    console.log(imgSrc, 'src')
+    // console.log(imgSrc, 'src')
 
     return (
         <div className="container">
