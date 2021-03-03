@@ -25,6 +25,10 @@ main {
     padding-bottom: 0.5rem;
 }
 
+footer {
+    box-sizing: border-box;
+}
+
 .footer_image {
     width: 50px;
 }
@@ -39,6 +43,11 @@ main {
 
 a.active {
     opacity: 1;
+}
+
+h3 {
+    max-height: 1.5rem;
+    line-height: 80%;
 }
 
 .weapon_img {
@@ -99,4 +108,53 @@ a.active {
     font-size: 1rem;
     -webkit-transition: .28s ease;
     transition: .28s ease;
+}
+
+@media screen and (max-width: 900px) {
+    h3 {
+        max-height: 2rem;
+        margin: 0;
+        margin-bottom: .2rem;
+    }
+    h4 {
+        max-height: 1.5rem;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+    h5 {
+        max-height: 2.6rem;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: .2rem;
+    }
+    .home_btn_wrapper {
+        height: 4rem;
+    }
+    .weapon_img {
+        width: 140px;
+    }
+}
+
+@media screen and (max-height: 707px) {
+    h3 {
+        font-size: 1.8rem;
+        max-height: 1.5rem;
+        line-height: 80%;
+    }
+    footer {
+        max-height: 5rem;
+        box-sizing: border-box;
+    }
+    footer div.row {
+        max-height: 3rem;
+    }
+    .row {
+        margin-bottom: 0px;
+    }
+    .weapon_img {
+        width: 100px;
+    }
+    .btn_go {
+        width: 100px;
+    }
 }
