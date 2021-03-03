@@ -1,33 +1,14 @@
-import React, {useEffect} from 'react';
-// import ReactDOM from 'react-dom';
-import {
-    BrowserRouter,
-    Switch,
-    Route,
-    Link,
-    NavLink
-} from "react-router-dom";
+import React from 'react';
 
 export interface Iweapon {
-    jj: string
-}
+    weapon: string
+};
 
-export const Weapon: React.FC<Iweapon> = ({ jj }) => {
-
-    // console.log(jj, 'Weapon')
-    // const imgSrcFromProps: string = jj === 'paper' ? 'paper' :
-    //                                 jj === 'rock' ? 'rock' :
-    //                                     'scissors';
-
-
-    
-    const imgSrc: string = `../../assets/${jj}.png`
-
-    // console.log(imgSrc, 'src')
-
+export const Weapon: React.FC<Iweapon> = ({ weapon }) => {
+    const imgSrc: string = `../../assets/${weapon}.png`
     return (
         <div className="container">
             <img className="weapon_img" src={imgSrc} alt="weapons" />
         </div>
     );
-}
+};

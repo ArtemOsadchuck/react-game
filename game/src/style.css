@@ -1,6 +1,7 @@
-* {
-    overflow: hidden;
-    /* box-sizing: border-box; */
+:root {
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    /* margin-top: 0px; */
 }
 
 #root {
@@ -65,7 +66,7 @@ a.active {
 }
 
 .btn_go {
-    width: 82%;
+    width: 70%;
 }
 
 .home_btn_wrapper {
@@ -76,4 +77,26 @@ a.active {
     height: 8rem;
     max-width: 650px;
     justify-content: space-around;
+}
+
+.select_time {
+    color: black;
+    margin-right: 15px;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: #c98d79;
+    border-color: rgba(255, 51, 0, 0.596);
+}
+
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-transition: .28s ease;
+    transition: .28s ease;
 }

@@ -1,9 +1,9 @@
-const HtmlPlugin = require("html-webpack-plugin")
-const path = require("path")
+const HtmlPlugin = require("html-webpack-plugin");
+const path = require("path");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const webpack = require("webpack")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   output: {
@@ -73,9 +73,4 @@ module.exports = {
       }
     })
   ],
-
-//   devServer: {
-//     historyApiFallback: true,
-//     port: 5010
-//   }
-}
+};
