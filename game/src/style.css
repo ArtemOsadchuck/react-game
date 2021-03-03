@@ -1,7 +1,6 @@
 :root {
-    /* overflow: hidden; */
     box-sizing: border-box;
-    /* margin-top: 0px; */
+    font-size: 14px
 }
 
 #root {
@@ -132,6 +131,14 @@ h3 {
     }
     .weapon_img {
         width: 140px;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    h3 {
+        font-size: 1.8rem;
+        max-height: 1.5rem;
+        line-height: 80%;
     }
 }
 

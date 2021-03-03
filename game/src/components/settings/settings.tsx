@@ -18,7 +18,7 @@ export const Settings: React.FC<Isettings> = (props) => {
     return (
         <div>
             <h1>Settings</h1>
-            <button className="btn waves-effect waves-light brown darken-1" onClick={() => play()}>music</button>
+            <button className="btn waves-effect waves-light brown darken-1" onClick={() => play()}>push me! D_tail - Led9</button>
             <div>
                 <h5>Effects</h5>
                 <form action="#" >
